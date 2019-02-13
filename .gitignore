@@ -1,4 +1,5 @@
 .vs/
 Debug/
 x64/
-ComVisCpp/x64/Release/
+ComVisCpp/Debug/
+ComVisCpp/x64/
