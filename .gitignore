@@ -3,3 +3,5 @@ Debug/
 x64/
 ComVisCpp/Debug/
 ComVisCpp/x64/
+ComVisCpp/ComVisCpp.vcxproj.filters
+ComVisCpp/ComVisCpp.vcxproj.user
