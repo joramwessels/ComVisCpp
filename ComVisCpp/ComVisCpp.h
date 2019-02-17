@@ -21,7 +21,7 @@ void printMatrix(cv::Mat matrix, std::string header = "");
 void drawAxes(cv::Mat &inputImage, cv::Mat rvecs, cv::Mat tvecs, cv::Mat cameraMatrix, cv::Mat distMatrix);
 void drawCube(cv::Mat &inputImage, float dimension, cv::Mat rvecs, cv::Mat tvecs, cv::Mat cameraMatrix, cv::Mat distMatrix);
 
-void drawAxesManually(cv::Mat K, std::vector<cv::Mat> rvecs, std::vector<cv::Mat> tvecs, cv::Mat img, cv::Size boardDim, float cellSize);
+void drawAxesManually(cv::Mat K, cv::Mat rvec, cv::Mat tvec, cv::Mat img, cv::Size boardDim, float cellSize);
 cv::Mat rotationVectorToMatrix(cv::Mat rvecs);
 cv::Mat makeTransformationMatrix(cv::Mat R, cv::Mat t);
 
