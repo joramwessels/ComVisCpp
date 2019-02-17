@@ -19,6 +19,7 @@ void getChessboardCorners(std::vector<cv::Mat> images, cv::Size boardSize, std::
 void cameraCalibration(std::vector<cv::Mat> calibrationImages, cv::Size boardSize, float squareEdgeLength, cv::Mat& cameraMatrix, cv::Mat& distortionCoefficients, std::vector<cv::Mat>& rvecs, std::vector<cv::Mat>& tvecs, bool showResults = false);
 void printMatrix(cv::Mat matrix, std::string header = "");
 void drawAxes(cv::Mat &inputImage, cv::Mat rvecs, cv::Mat tvecs, cv::Mat cameraMatrix, cv::Mat distMatrix);
+void drawCube(cv::Mat &inputImage, float dimension, cv::Mat rvecs, cv::Mat tvecs, cv::Mat cameraMatrix, cv::Mat distMatrix);
 
 void drawAxesManually(cv::Mat K, std::vector<cv::Mat> rvecs, std::vector<cv::Mat> tvecs, cv::Mat img, cv::Size boardDim, float cellSize);
 cv::Mat rotationVectorToMatrix(cv::Mat rvecs);
